@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Factory 3D Scanning</title>
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+<style>
+    .section1 {
+        background-image: url(images/scanbin/Coverphoto.png);
+        background-size: cover;
+        padding: 220px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position-y: -60px;
+    }
+
+    .hr {
+        width: 60px;
+        height: 7px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        background-color: black;
+    }
+
+    .content1 {
+        padding: 10px;
+        margin: 30px;
+        position: absolute;
+        top: 40px;
+        left: 80px;
+    }
+
+    #btn1 {
+        background-color: black;
+        width: 200px;
+        height: 50px;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        position: absolute;
+        left: 110px;
+    }
+
+    .hr1 {
+        width: 60px;
+        height: 3px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        background-color: #E5B122;
+    }
+
+    .btn2 {
+        background-color: #E5B122;
+        height: 40px;
+        width: 200px;
+        color: black;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 90px;
+    }
+
+    p {
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .box1 {
+        margin-left: 70px;
+        padding: 20px;
+    }
+
+    .box2 {
+        margin-left: 70px;
+        padding: 20px;
+        margin-top: 70px;
+    }
+
+    .section3 {
+        display: flex;
+        background-color: #FBFBFB;
+        margin: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FBFBFB;
+        margin-bottom: 0px;
+    }
+
+    .navbar-items {
+        display: flex;
+        gap: 80px;
+    }
+
+    .navbar-item {
+        color: #656565;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 15px;
+    }
+    .section4{
+        padding-top: 30px;
+        background-color: #D3D3D3;
+    }
+
+    #workflow {
+        font-size: 28px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #bar {
+        width: 90px;
+        height: 6px;
+        margin: auto;
+        border: 1px solid #E5B122;
+        background-color:  #E5B122;
+        opacity: 1;
+    }
+    .num {
+    height: 240px;
+    width: 220px;
+    background-color: #E5B122;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+    .num p {
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    }
+    .circle h1 {
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    margin-top: -20px;
+    padding: 8px;
+    }
+    .num:hover{
+        background-color: white;
+    }
+    .num h1:hover{
+        background-color: #E5B122;
+    }
+    .section5{
+        background-color: #FFF7E2;
+        margin-top: 25px;
+        padding: 30px;
+    }
+    #bar1{
+        width: 15%;
+       border-top:5px solid#E5B122;
+       opacity: 1;
+    
+    }
+    li{
+        font-size: 16px;
+        padding: 15px;
+    }
+    .box4{
+        margin: 60px;
+    }
+    .lists span{
+        font-size: 19px;
+        color: #E5B122;
+        padding: 15px;
+        margin-left: -40px;
+    }
+    .section6{
+        background-color: white;
+    }    
+    .list1 span{
+        font-size: 19px;
+        color: #E5B122;
+        padding: 10px;
+        margin-left: -40px;
+    }
+    .box5{
+        margin: 20px;
+    }
+    .box6{
+        margin: 140px;
+    }
+    .section7{
+        background-color: white;
+    }
+    .formbox1{
+        background-color: #545454;
+        padding: 50px;
+        padding-top: 220px;
+        padding-bottom: 240px;
+    } 
+    input{
+      height: 30px;
+      border-bottom: 1px solid black;
+      width: 60%;
+      margin-top: 30px;
+      font-size: 15px;
+      }
+    input::placeholder{
+      font-size: 15px;
+      }
+    .form{
+      padding-left: 60px;
+    }
+
+    .btn3{
+      width: 80px;
+      margin-left: 20px;
+      background-color: #DFB749;
+      height: 20px;
+      margin-top: 30px;
+      scale: 150%;
+      font-size: 10px;
+      font-weight: 550;
+      margin-bottom: 10px;
+      cursor: pointer;
+}
+#fcontent{
+    color: white;
+}
+.section8{
+    padding: 30px;
+}
+.imgallery{
+    margin-left: 40%;
+}
+#bar2{
+       width: 10%;
+       border-top:5px solid#E5B122;
+       opacity: 1;
+       margin-left: 7%;   
+}
+.section8 h1{
+       color: black;
+       text-align: center;
+       margin-top: 50px;
+  }
+  .section8 hr{
+    width:80px;
+    border-top:3px solid#E5B122;
+    margin-left: 600px;
+    /* color: #E5B122; */
+    size: 6px;
+    opacity: 1;
+  }
+  .imggall{
+    margin-left: 470px;
+  }
+  .gallery{
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px 60px 0px;
+}
+.wrapper{
+  display: flex;
+  
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 94px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 94px;
+  background: #fff;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel{
+  width: 280px;
+}
+
+.carousel img{
+  height: 80px;
+  width: 1000px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+.previewimg{
+  
+  padding: 0;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion-item span{
+  font-size: 15px;
+}
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px){
+    .section1{
+        margin-bottom: -60px;
+    }
+    .box1{
+        margin-left: 30px;
+    }
+    .btn2{
+        margin-left: 110px;
+    }
+    .section3{
+        display: none;
+    }
+    .formbox2{
+        margin-top: 20px;
+    }
+    .formbox1{
+        padding: 90px;
+    }
+    .box6{
+        margin: 20px;
+    }
+    .box4{
+        margin: 20px;
+    }
+    .box2{
+        margin: 20px;
+        margin-left: 90px;
+        padding: 0;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+
+        <!-- Main Header-->
+        <header class="main-header">
+            <!-- Main Box -->
+            <div class="main-box">
+                <div class="container">
+                    <div class="outer-container clearfix">
+                        <!--Logo Box-->
+                        <div class="logo-box">
+                            <div class="logo">
+                                <a href="index.html"><img src="images/home/wildplant logos-07.png" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <!--Nav Outer-->
+                        <div class="nav-outer clearfix">
+                            <!-- Main Menu -->
+                            <nav class="main-menu">
+                                <div class="navbar-header">
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li class=""><a href="index.html">Home</a></li>
+                                        <li class="">
+                                            <a href="about-us.html">About Us</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="product.html">Product </a>
+                                            <ul>
+                                                <li class="">
+                                                    <a href="faro-focus-3D-scanner.html">Faro Focus 3D Sanner</a>
+                                                </li>
+                                                <li>
+                                                    <a href="faro-scene-software.html">Faro Scene Software</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown current">
+                                            <a href="#">Technology services</a>
+                                            <ul>
+                                                <li>
+                                                <li class="current"><a href="3Dlaser-technology.html">3D Laser
+                                                        Technology</a></li>
+                                        </li>
+                                        <li><a href="technologies.php">Technology</a></li>
+                                        <li><a href="3Dscan-Bim-service.html">3D Scan Bim Service</a></li>
+                                        <li><a href="building-3D-scanning.html">Building 3D Scanning</a></li>
+                                        <li><a href="factory-3D-scanning.html">Factory 3D Scanning</a></li>
+                                        <li><a href="heritage-3D-scanning.html">Heritage 3D Scanning</a></li>
+                                        <li><a href="infrastructure-3D-scanning.html">Infrastructure 3D Scanning</a>
+                                        </li>
+                                        <li><a href="movie-set-3D-scanning.html">Movie Set 3D Scanning</a></li>
+                                    </ul>
+                                    </li>
+
+
+                                    <li class="">
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                    <li class="laser-scan">
+                                        <a href="contact.html">BOOK LASER SCAN</a>
+                                    </li>
+                                    <li class="faro-scan">
+                                        <a href="contact.html">BUY FARO 3D SCANNER</a>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <!-- Main Menu End-->
+                        </div>
+                        <!--Nav Outer End-->
+
+                        <!-- Hidden Nav Toggler -->
+                        <div class="nav-toggler">
+                            <button class="hidden-bar-opener">
+                                <span class="icon fa fa-bars"></span>
+                            </button>
+                        </div>
+                        <!-- / Hidden Nav Toggler -->
+
+                        <!--Search Btn-->
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Main Header -->
+
+        <!-- Hidden Navigation Bar -->
+        <section class="hidden-bar right-align">
+            <div class="hidden-bar-closer">
+                <button class="btn"><i class="fa fa-close"></i></button>
+            </div>
+
+            <!-- Hidden Bar Wrapper -->
+            <div class="hidden-bar-wrapper">
+                <!-- .logo -->
+                <div class="logo text-center">
+                    <a href="index.html"><img src="images/home/wildplant logos-07.png" alt="" /></a>
+                </div>
+                <!-- /.logo -->
+
+                <!-- .Side-menu -->
+                <div class="side-menu">
+                    <!-- .navigation -->
+                    <ul class="navigation">
+                        <li class=""><a href="index.html">Home</a></li>
+                        <li class="">
+                            <a href="about-us.html">About Us</a>
+                        </li>
+                        <li class="">
+                            <a href="faro-focus-3D-scanner.html">Faro Focus 3D Scanner </a>
+                        </li>
+                        <li class="">
+                            <a href="faro-scene-software.html">Faro Scene Software</a>
+                        </li>
+                        <li class="current">
+                            <a href="3Dlaser-technology.html">3D Laser Technology</a>
+                        </li>
+                        <li><a href="3Dscan-Bim-service.html">3D Scan Bim Service</a></li>
+                        <li><a href="building-3D-scanning.html">Building 3D Scanning</a></li>
+                        <li><a href="factory-3D-scanning.html">Factory 3D Scanning</a></li>
+                        <li><a href="heritage-3D-scanning.html">Heritage 3D Scanning</a></li>
+                        <li><a href="infrastructure-3D-scanning.html">Infrastructure 3D Scanning</a></li>
+                        <li><a href="movie-set-3D-scanning.html">Movie Set 3D Scanning</a></li>
+                        <li><a href="forest-terrestrial-3D-scanning.html">Forest Terrestrial 3D Scanning</a></li>
+                        <li class="">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.Side-menu -->
+
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- / Hidden Bar Wrapper -->
+        </section>
+        <!-- / Hidden Bar -->
+    </div>
+    <!--End pagewrapper-->
+
+    <!--Search Popup-->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search theme-btn">
+            <span class="flaticon-unchecked"></span>
+        </div>
+        <div class="popup-inner">
+            <div class="search-form">
+                <form method="post" action="index.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value=""
+                                placeholder="Search Here" required />
+                            <input type="submit" value="Search" class="theme-btn" />
+                        </fieldset>
+                    </div>
+                </form>
+
+                <br />
+
+            </div>
+        </div>
+    </div>
+
+    <!--Page Title-->
+    <div class="section1">
+        <div class="container">
+            <div class="content1">
+                <h1>Scan To BIM</h1>
+                <div class="hr"></div>
+                <h4>BIM intelligence from the laser scan</h4>
+            </div>
+            <button id="btn1">Get A Quote</button>
+        </div>
+    </div>
+    </div>
+    <div class="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 overview">
+                    <div class="box1">
+                        <h1>OVERVIEW</h1>
+                        <hr id="bar1"></hr>
+                        <p>"Scan to BIM modeling'' is the process of converting a point cloud into data usable Building
+                            Information Model(BIM). Scanning is done with a 3D laser scanner, which creates laser points
+                            over an area. These points are then imported into Scan to BIM Revit software to produce
+                            detailed
+                            models of existing structures for accurate BIM implementation. Scan to BIM is a proper
+                            collaboration tool, enabling all parties to work with the same information. Many
+                            construction
+                            firms implement BIM to continue to save money on projects by avoiding rework, delays, and
+                            errors. A detailed and accurate BIM model is essential for the whole lifecycle of a project,
+                            which is why we have added Scan to BIM technology to our existing solutions. With these
+                            solutions, you'll be able to create more realistic BIM 3D models based on different levels
+                            of
+                            details from LOD 200 to LOD 500.</p>
+                    </div>
+                    <button class="btn2">Get A Quote</button>
+                </div>
+                <div class="col-md-6 pic1">
+                    <div class="box2">
+                        <img src="images/scanbin/WhatsApp Image 2021-02-18 at 4.44.52 PM (15) (5).png" width="250px"
+                            height="110px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar-items">
+                        <a href="#" class="navbar-item">Workflow</a>
+                        <a href="#" class="navbar-item">Benefits</a>
+                        <a href="#" class="navbar-item">Application</a>
+                        <a href="#" class="navbar-item">Get Quote</a>
+                        <a href="#" class="navbar-item">Image Gallery</a>
+                        <a href="#" class="navbar-item">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section4">
+            <h1 id="workflow">Workflow?</h1>
+            <hr id="bar">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="num">
+                    <div class="row">
+                      <div class="circle">
+                          <h1>01</h1>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p>we import the scans of the area that needs to be tested for QC</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="num">
+                    <div class="row">
+                      <div class="circle">
+                          <h1>02</h1>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p>Create the plane feature by points that need to be tested</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="num">
+                    <div class="row">
+                      <div class="circle">
+                          <h1>03</h1>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p>We change the properties of features created to either 0 or 90 degrees, so the plane is completely either flat or perpendicular to the real world.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="num">
+                      <div class="row">
+                        <div class="circle">
+                            <h1>04</h1>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <p>We perform the surface deviation analysis.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="num">
+                      <div class="row">
+                        <div class="circle">
+                            <h1>05</h1>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <p>The result is recorded and exported in pdf files.</p>
+                      </div>
+                    </div>
+                  </div>
+</div>
+</div>          
+        <div class="section5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 left">
+                        <div class="box3">
+                            <h1>Benefits of Scan to BIM</h1>
+                            <hr id="bar1">
+                            <div class="lists">
+                                <ul>
+                                    <li> <span class="glyphicon glyphicon-play play"></span>
+                                    The results are more reliable than traditional survey methods or using old as-built data or blueprints</li>
+                                    <li>
+                                        <span class="glyphicon glyphicon-play play"></span>
+                                        Using BIM models allows many parties involved in a project to work together.
+                                    </li>
+                                    <li>
+                                        <span class="glyphicon glyphicon-play play"></span>
+                                        When you create a BIM model directly from scanned laser data, there is less chance for errors. This means construction will run smoother with fewer delays.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right">
+                        <div class="box4">
+                            <img src="images/scanbin/WhasApp Image 2021-02-18 at 4.44.52 PM (23) (1).png" width="320px" height="200px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box5">
+                            <h2>Where Do you use <br> <b>Scan To BIM Application</b></h2>
+                            <hr id="bar1">
+                            <div class="list1">
+                                <ul>
+                                    <li><span class="glyphicon glyphicon-play play"></span>
+                                        Competitive Pricing
+                                    </li>
+                                    <li><span class="glyphicon glyphicon-play play"></span>
+                                        Competitive Pricing
+                                    </li>
+                                    <li><span class="glyphicon glyphicon-play play"></span>
+                                        Competitive Pricing
+                                    </li>
+                                    <li><span class="glyphicon glyphicon-play play"></span>
+                                        Competitive Pricing
+                                    </li>
+                                    <li><span class="glyphicon glyphicon-play play"></span>
+                                        Competitive Pricing
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box6">
+                            <img src="images/scanbin/WhasApp Image 2021-02-18 at 4.44.52 PM (23) (1).png" width="350px" height="230px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 formbox1">
+                        <h1 id="fcontent">Get A Quote <br>For Digitizing Your Factory Now</h1>
+                        <hr id="bar1"></hr>
+                    </div>
+                    <div class="col-md-6  formbox2">
+                        <form class="form">
+                            <h1>Fill Form</h1>
+                            <input type="text" placeholder="Enter your Name"><br>
+                            <input type="email" placeholder="E mail" required><br>
+                            <input type="text" placeholder="Company Name"><br>
+                            <input type="text" placeholder="Factory Name"><br>
+                            <input type="text" placeholder="Factory Size"><br>
+                            <input type="text" placeholder="Number of Machinary"><br>
+                            <input type="text" placeholder="What would you want to include in the scan"><br>
+                            <button class="btn3">SUBMIT</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section8">
+            <div class="container">
+                <div class="row">
+                 <div class="col-md-12">
+                   <h1>Image Gallery</h1>
+                 <hr>
+                   <div class="imggall">
+                    <img src="images/scanbin/Group 3.png" alt="" width="320px" height="320px">
+                   </div>
+                 </div>
+                </div>
+               </div>  
+               <div class="gallery">
+                 <div class="wrapper">
+                   <i id="left" class="fa-solid fa-angle-left"></i>
+                   
+                   <div class="carousel">
+                     <img src="images/scanbin/2.webp" alt="img" draggable="false">
+                     <img src="images/scanbin/3.webp" alt="img" draggable="false">
+                     <img src="images/scanbin/2.webp" alt="img" draggable="false">
+                     <img src="images/scanbin/3.webp" alt="img" draggable="false">
+                     <img src="images/scanbin/WhasApp Image 2021-02-18 at 4.44.52 PM (23) (1).png" alt="img" draggable="false">
+                   
+                   </div>
+                   <i id="right" class="fa-solid fa-angle-right"></i>
+                 </div>
+          </div>
+          <div class="container">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fa-solid fa-question"></i><span>what are the properties of mesh models from the scan?</span>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Mesh models from the scan are converted from the laser scan point clouds. They are not volume mesh. They are surface mesh files from ploygonising laser points. 
+                  </div>
+                </div>
+              </div>
+                    <!-- FAQ2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fa-solid fa-question"></i><span>what are the properties of mesh models from the scan?</span>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Mesh files are delivered to customers in the form of .stl files.
+                    </div>
+                </div>
+              </div>
+            
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fa-solid fa-question"></i> <span>How long does it take to create a mesh file from laser scans?</span>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Scanning to mesh is typically a time-consuming process, so the time to convert mesh files from the scan is dependent on the size of the point clouds.</div>
+                </div>
+              </div>
+            
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingfour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                    <i class="fa-solid fa-question"></i> <span>Can I use mesh files directly in AR/VR applications?</span>
+                  </button>
+                </h2>
+                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Mesh files from the laser scans are not directly usable in AR VR applications as they are heavy to handle in AR VR. There need to be some more steps involved for use in AR VR.</div>
+              </div>
+          </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>   
+
+
+
+
+
+
+
+    <!--End pagewrapper-->
+
+    <!--Search Popup-->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search theme-btn">
+            <span class="flaticon-unchecked"></span>
+        </div>
+        <div class="popup-inner">
+            <div class="search-form">
+                <form method="post" action="index.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value=""
+                                placeholder="Search Here" required />
+                            <input type="submit" value="Search" class="theme-btn" />
+                        </fieldset>
+                    </div>
+                </form>
+
+                <br />
+                <h3>Recent Search Keywords</h3>
+                <ul class="recent-searches">
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Logistics</a></li>
+                    <li><a href="#">Freedom</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Main Footer-->
+    <footer class="main-footer" style="background-image: url(images/background/footer-bg.jpg)">
+        <div class="auto-container">
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row clearfix">
+                    <!--Big Column-->
+                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="row clearfix">
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget about-widget">
+                                    <div class="footer-logo">
+                                        <figure>
+                                            <a href="index.html"><img src="images/home/wildplant logos-07.png"
+                                                    alt="" /></a>
+                                        </figure>
+                                    </div>
+                                    <div class="widget-content">
+                                        <div class="text">
+                                            Wild plant provides accurate 3D scan data generated that enable you to view
+                                            as-built documentation in a virtual world.
+                                        </div>
+                                        <ul class="contact-info">
+                                            <li>
+                                                <span class="icon fa fa-map-marker"></span>2A/461, 2nd Floor, Rajas
+                                                Tower, Medavakkam Main Rd, Kovilambakkam, Chennai, Tamil Nadu 600129
+                                            </li>
+                                            <li>
+                                                <span class="icon fa fa-phone"></span>+91-98404 78347
+                                            </li>
+                                            <li>
+                                                <span class="icon fa fa-envelope-o"></span>support@wildplant3d.com
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget tags-widget">
+                                    <h2>Popular Tags</h2>
+                                    <div class="widget-content">
+                                        <ul class="tags-list">
+                                            <li><a href="about-us.html">About Us </a></li>
+                                            <li><a href="product.html">Products</a></li>
+                                            <li><a href="faro-focus-3D-scanner.html">Technology Services</a></li>
+                                            <li><a href="#">Resource</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Big Column-->
+                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="row clearfix">
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget posts-widget">
+                                    <h2>Recent News</h2>
+                                    <div class="widget-content">
+                                        <div class="posts">
+                                            <div class="post">
+                                                <figure class="post-thumb">
+                                                    <img src="images/home/bridge.png" alt="" /><a href="#"
+                                                        class="overlay-link"><span class="flaticon-plus-1"></span></a>
+                                                </figure>
+                                                <div class="desc-text">
+                                                    <a href="#">We are Building New Quality Machinery.</a>
+                                                </div>
+                                                <div class="time">
+                                                    <span class="fa fa-clock-o"></span> Oct 03, 2022
+                                                </div>
+                                            </div>
+                                            <div class="post">
+                                                <figure class="post-thumb">
+                                                    <img src="images/home/factory.png" alt="" /><a href="#"
+                                                        class="overlay-link"><span class="flaticon-plus-1"></span></a>
+                                                </figure>
+                                                <div class="desc-text">
+                                                    <a href="#">We are Building New Quality Machinery</a>
+                                                </div>
+                                                <div class="time">
+                                                    <span class="fa fa-clock-o"></span> Aug 21, 2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="view-more theme-btn" href="#">Read More <span
+                                                class="fa fa-caret-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget contact-widget">
+                                    <h2>Send Us Message</h2>
+                                    <div class="widget-content">
+                                        <div class="newsletter-form">
+                                            <form method="post" action="contact.html">
+                                                <div class="form-group">
+                                                    <input type="text" name="name" value="" placeholder="Name"
+                                                        required />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" name="email" value="" placeholder="Email *"
+                                                        required />
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea name="message" placeholder="Message *"
+                                                        required></textarea>
+                                                </div>
+                                                <button type="submit" class="theme-btn btn-style-two">
+                                                    Send us
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="clearfix">
+                    <div class="pull-left">
+                        <div class="copyright">
+                            &copy; Copyright 2023 by Wildplant
+
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <ul class="footer-nav">
+                            <li><a href="#"><span class="fa-brands fa-facebook-f"></span></a></li>
+                            <li><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fa-brands fa-linkedin"></span></a></li>
+                            <li><a href="#"><span class="fa-brands fa-twitter"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!--End pagewrapper-->
+
+    <!--Search Popup-->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search theme-btn">
+            <span class="flaticon-unchecked"></span>
+        </div>
+        <div class="popup-inner">
+            <div class="search-form">
+                <form method="post" action="index.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value=""
+                                placeholder="Search Here" required />
+                            <input type="submit" value="Search" class="theme-btn" />
+                        </fieldset>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target=".main-header">
+        <span class="fa fa-long-arrow-up"></span>
+    </div>
+
+
+    <script>
+        const carousel = document.querySelector(".carousel"),
+firstImg = carousel.querySelectorAll("img")[0],
+arrowIcons = document.querySelectorAll(".wrapper i");
+
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+const showHideIcons = () => {
+    // showing and hiding prev/next icon according to carousel scroll left value
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+}
+
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+        // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+    });
+});
+
+const autoSlide = () => {
+    // if there is no image left to scroll then return from here
+    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+
+    positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+    let firstImgWidth = firstImg.clientWidth + 14;
+    // getting difference value that needs to add or reduce from carousel left to take middle img center
+    let valDifference = firstImgWidth - positionDiff;
+
+    if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+    // if user is scrolling to the left
+    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+
+const dragStart = (e) => {
+    // updatating global variables value on mouse down event
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+    // scrolling images/carousel to left according to mouse pointer
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carousel.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+}
+
+const dragStop = () => {
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+
+    if(!isDragging) return;
+    isDragging = false;
+    autoSlide();
+}
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
+
+document.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
+
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("touchend", dragStop);
+
+        function changeMainImage(newImageSrc) {
+            var mainImg = document.getElementById('main-img');
+            mainImg.src = newImageSrc; // Change the main image to the clicked image
+        }
+        function changeMainImage1(newImageSrc) {
+            var mainImg = document.getElementById('main-img');
+            mainImg.src = newImageSrc; // Change the main image to the clicked image
+        }
+        function changeMainImage3(newImageSrc) {
+            var mainImg = document.getElementById('main-img');
+            mainImg.src = newImageSrc; // Change the main image to the clicked image
+        }
+        function changeMainImage4(newImageSrc) {
+            var mainImg = document.getElementById('main-img');
+            mainImg.src = newImageSrc; // Change the main image to the clicked image
+        }
+
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="js/revolution.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.fancybox-media.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
